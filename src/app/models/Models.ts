@@ -15,7 +15,7 @@ export class InterNalResponse<T>{
   data?: T
 }
 
-export class Collaborator {
+export class Collaborator  {
   id?: number;
   nom?: string;
   prenom?: string;

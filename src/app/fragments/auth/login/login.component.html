@@ -1,0 +1,61 @@
+<!--<form (submit)="loginForm()"  method="POST">
+  <h1>Connexion</h1>
+
+  <label><b>Nom d'utilisateur</b></label>
+  <input type="text" placeholder="Entrer le nom d'utilisateur" [(ngModel)]="login.username" id="username" name="username" required>
+
+  <label><b>Mot de passe</b></label>
+  <input type="password" placeholder="Entrer le mot de passe" [(ngModel)]="login.password" id="password" name="password" required>
+
+  <input type="submit" id='submit' value='LOGIN' >
+
+</form>
+
+<div class="container">
+  <form (submit)="loginForm()"  method="POST">
+    <p>Bienvenue</p>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input class="form-control" type="text" placeholder="Entrer le nom d'utilisateur" [(ngModel)]="login.username" id="username" name="username" required><br>
+    </div>
+    <div class="form-group">
+      <label for="password">Mote de passe</label>
+      <input class="form-control" type="password" placeholder="Entrer le mot de passe" [(ngModel)]="login.password" id="password" name="password" required><br>
+    </div>
+    <div>
+      <input type="submit" id='submit' value='CONNEXION' >
+      <a href="#">Mot de passe oublié</a>
+    </div>
+  </form>
+
+  <div class="drop drop-1"></div>
+  <div class="drop drop-2"></div>
+  <div class="drop drop-3"></div>
+  <div class="drop drop-4"></div>
+  <div class="drop drop-5"></div>
+</div>-->
+
+<div class="container mt-5" id="formContent">
+  <!-- Tabs Titles -->
+  <h2 class="active"> Page de connexion </h2>
+
+  <!-- Icon -->
+  <div class="fadeIn first">
+    <img src="./assets/images/logo-auth.png" id="icon" alt="Auth Icon" />
+  </div>
+  <div class="wrapper fadeInDown">
+
+    <!-- Login Form -->
+    <form (submit)="loginForm()"  method="POST">
+      <input type="text" class="fadeIn second" [(ngModel)]="login.username" id="username" name="username" placeholder="Email ou Username">
+      <input type="password" class="fadeIn third" [(ngModel)]="login.password" id="password" name="password" placeholder="Mot de passe">
+      <input type="submit" class="fadeIn fourth" id="submit" value="Connexion">
+    </form>
+
+    <!-- Remind Passowrd -->
+    <div id="formFooter">
+      <a class="underlineHover" href="#">Avez-vous oublié votre mot de passe?</a>
+    </div>
+
+  </div>
+</div>

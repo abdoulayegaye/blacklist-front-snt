@@ -50,14 +50,14 @@ export class AccountService {
       console.log(res)
       return {
         success:true,
-        msg:"Connexion réussie avec succès",
+        msg:"Connexion réussie avec succès !",
         data: {}
       };
     } catch (e) {
       // @ts-ignore
       console.log(e?.error?.message)
       // @ts-ignore
-      return {success:false, msg:e?.error?.message || "Une erreur est survenue ! ", data: {}};
+      return {success:false, msg:e?.error?.message || "Une erreur est survenue !", data: {}};
     }
   }
 
